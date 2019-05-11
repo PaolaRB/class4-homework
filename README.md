@@ -2,10 +2,10 @@
 Docker
 ======
 A. Building the Dockerfile into an image
-	docker build -t my_csv_reader .
+	docker build -t my_csv_reader:latest .
 
 B. Running the image 
-	docker run my_csv_reader
+	docker run my_csv_reader:latest "/app/wdbc.data"
 
 Continuous Integration
 ======================

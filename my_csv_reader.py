@@ -37,7 +37,8 @@ file.close()
 
 
 # saving the data in a file without transposing columns
-file_path_no_trs = "./data/corrected_file_no_transposing.txt"
+#file_path_no_trs = "/data/corrected_file_no_transposing.txt"
+file_path_no_trs = "/app/data/corrected_file_no_transposing.txt"
 with open(file_path_no_trs, '+w') as file_handler:
     for item in corrected_file:
         file_handler.write("{}\n".format(item))
@@ -54,7 +55,8 @@ for line in corrected_file:
 print("Total records in transposed_list = " + str(len(transposed_list)))
 print("First row - slice 10: " + str(transposed_list[0][0:10]))
 
-file_path = "./data/corrected_file_with_transposing.txt"
+#file_path = "/data/corrected_file_with_transposing.txt"
+file_path = "/app/data/corrected_file_with_transposing.txt"
 with open(file_path, '+w') as write_handler:
     for item in transposed_list:
         write_handler.write("{}\n".format(item))
